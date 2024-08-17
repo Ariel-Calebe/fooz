@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Inter;
+}
+
+a {
+    color: #000000; 
+    text-decoration: none; 
+}
+
+body{
+    position: relative;
+}
+
+header{
+    width: 100%;
+    background-color: #009b00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#searchBox{
+    margin-top: 10px;
+    background-color: #ff8200;
+    padding: 0.7rem;
+    border-radius: 15px 15px 0px 0px; 
+    display: flex;
+}
+
+#searchIconSearchBox{
+    width: 18px;
+    fill:#009b00;
+}
+
+#textSearchBox{
+    padding-right: 100px;
+    padding-left: 15px;
+    background-color: #ff8200;
+    border: none;
+}
+
+#textSearchBox:focus{
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+
+#sectionMenu{
+    text-align: center;
+    background-color: #ff8200;
+}
+
+#selectionMenu{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#selectionMenu li{
+    padding: 15px;
+    font-size: 20px;
+}
+
+#sectionSearchProducts{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.divSearchProducts{
+    width: 431px;
+    height: 231px;
+    background-image: url(images/noimage.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.textSearchProducts{
+    border-radius: 15px;
+    position: absolute;
+    background-color: #009b00;
+    height: 231px;
+    width: 900px;
+    left: 95%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.textSearchProducts ul{
+    list-style: none;
+}
+
+.textSearchProducts ul:first-child{
+    width: 60%;
+}
+
+.textSearchProducts ul li{
+    list-style: none;
+    margin-top: 10px;
+    color: white;
+}
+
+.textSearchProducts ul:nth-child(1)>li:nth-child(1){
+    font-size: 35px;
+}
+
+.textSearchProducts ul:nth-child(1)>li:nth-child(2){
+    font-size: 20px;
+    width: 50%;
+}
+
+.textSearchProducts ul:nth-child(2) li{
+    font-size: 45px;
+    color: #ff8200;
+}
+
+#sectionRodape {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 236px;
+    background-color: #009b00;
+    color:#ff8200;
+}
+
+#sectionRodape div:nth-child(1){
+    grid-column: 2 / 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 40px;
+} 
+
+#sectionRodape div dl dt{
+    font-size: 24px;
+}
+
+#sectionRodape div:nth-child(2){
+    grid-column: 3 / 4;
+    margin-top: 53px;
+}
+
+#sectionRodape div:nth-child(3){
+    grid-column: 4 / 5;
+    margin-top: 53px;
+}
+
+#sectionRodape div:nth-child(4){
+    grid-column: 5 / 6;
+    margin-top: 53px;
+}
+

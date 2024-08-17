@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Inter;
+}
+
+a {
+    color: #000000; 
+    text-decoration: none; 
+}
+
+header{
+    width: 100%;
+    background-color: #009b00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#searchBox{
+    margin-top: 10px;
+    background-color: #ff8200;
+    padding: 0.7rem;
+    border-radius: 15px 15px 0px 0px; 
+    display: flex;
+}
+
+#searchIconSearchBox{
+    width: 18px;
+    fill:#009b00;
+}
+
+#textSearchBox{
+    padding-right: 100px;
+    padding-left: 15px;
+    background-color: #ff8200;
+    border: none;
+}
+
+#textSearchBox:focus{
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+
+#sectionMenu{
+    text-align: center;
+}
+
+#selectionMenu{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#selectionMenu li{
+    padding: 15px;
+    font-size: 20px;
+}
+
+#sectionPayProducts{
+    width: 100%;
+    height: 1300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #009b00; 
+}
+.divOneProduct{
+    display: flex;
+    flex-direction: row;
+    height: 300px;
+    margin-top: 35px;
+}
+
+.divOneProduct img{
+    width:300px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.divOneProduct div:nth-child(2){
+    background-color: white;
+    width: 709px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.divOneProduct div:nth-child(2) p{
+    margin-left: 20px;
+    color: #009b00;
+}
+
+.divOneProduct div:nth-child(2) p:nth-child(1){
+    font-size: 24px;
+}
+
+.divOneProduct div:nth-child(2) p:nth-child(2){
+    font-size: 70px;
+}
+
+.divOneProduct div:nth-child(3){
+    background-color: #ff8200;
+    width: 85px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.divOneProduct div:nth-child(3) button{
+    height: 43px;
+    width: 43px;
+    font-size: 30px;
+    background-color: #009b00;
+    color: #ff8200;
+    border-style: none;
+    border-radius: 100%;
+}
+
+.divOneProduct div:nth-child(3) p{
+    font-size: 20px;
+    color: white;
+}
+
+#sectionFormsToPay{
+    background-color: white;
+    width: 70%;
+    height: 520px;
+    margin-top: 40px;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100%;
+}
+
+#formsToPay{
+    grid-column: 1/2;
+    grid-row: 1 / 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 16.66% 16.66% 16.66% 16.66% 16.66% 16.66%;
+}
+
+#formsToPay input{
+    width: 100%;
+    height: 50%;
+}
+
+#formsToPay div:nth-child(1){
+    grid-column: 2/5;
+    grid-row: 2 / 3;
+}
+
+#formsToPay div:nth-child(2){
+    grid-column: 2/3;
+    grid-row: 3 / 4;
+}
+
+#formsToPay div:nth-child(3){
+    grid-column: 3/5;
+    grid-row: 3 / 4;
+}
+
+#formsToPay div:nth-child(4){
+    grid-column: 2/3;
+    grid-row: 4 / 5;
+}
+
+#formsToPay div:nth-child(5){
+    grid-column: 3/4;
+    grid-row: 4 / 5;
+}
+
+#formsToPay div:nth-child(6){
+    grid-column: 4/5;
+    grid-row: 4 / 5;
+}
+
+#formsToPay div:nth-child(7){
+    grid-column: 2/5;
+    grid-row: 5 / 6;
+}
+
+#valorTotalToPay{
+    grid-column: 2/3;
+    grid-row: 1 / 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#valorTotalToPay div:nth-child(1){
+    width: 90%;
+    background-color: #D9D9D9;
+    position: relative;
+    padding: 20px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    color:#ff8200;
+}
+
+#valorTotalToPay div:nth-child(1) p:nth-child(1){
+    font-size: 24px;
+}
+
+#valorTotalToPay div:nth-child(1) p:nth-child(2){
+    font-size: 70px;
+}
+
+#valorTotalToPay div:nth-child(1) div:nth-child(3){
+    background-color:#ff8200;
+    color: #009b00;
+    position: absolute;
+    width: 100%;
+    border-radius: 20px;
+    padding-left: 10px;
+    right: 0.05%;
+}
+
+#valorTotalToPay button:nth-child(2){
+    margin-top: 20px;
+    width: 90%;
+    height: 65px;
+    border-radius: 15px;
+    border-style: none;
+    background-color: #009b00;
+    color: #ff8200;
+    font-size: 24px;
+}
+
+#sectionRodape {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 236px;
+    background-color: white;
+    color:#ff8200;
+    margin-top: 20px;
+}
+
+#sectionRodape div:nth-child(1){
+    grid-column: 2 / 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 40px;
+} 
+
+#sectionRodape div dl dt{
+    font-size: 24px;
+}
+
+#sectionRodape div:nth-child(2){
+    grid-column: 3 / 4;
+    margin-top: 53px;
+}
+
+#sectionRodape div:nth-child(3){
+    grid-column: 4 / 5;
+    margin-top: 53px;
+}
+
+#sectionRodape div:nth-child(4){
+    grid-column: 5 / 6;
+    margin-top: 53px;
+}
